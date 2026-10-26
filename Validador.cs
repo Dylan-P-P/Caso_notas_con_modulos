@@ -46,10 +46,10 @@ namespace Caso_notas_con_modulos
         }
         public static string LeerTexto(string mensaje)
         {
+            Console.Write(mensaje);
             while (true)
             {
                 string texto = Console.ReadLine()?.Trim();
-                Console.Write(mensaje);
                 if (!string.IsNullOrWhiteSpace(texto))
                 {
                     return texto;
